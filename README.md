@@ -10,6 +10,16 @@ The calculation uses the vector, the unit vector of the axis, and the angle. The
 This project is the Rodrigues' Formula demonstrated in Python and Rust; intended to be used as a building block for other projects.
 _____________
 
+### Applications
+
+• **3D Animation & Video Games**: Moving an item around a specific pivot point in a virtual 3D space, or calculating where a player's field-of-view camera is pointing when they move their mouse.
+
+• **Robotics Control Pipelines**: Calculating the physical angles that an industrial motor needs to turn to position a robotic gripper at an exact XYZ coordinate in space.
+
+• **Flight Dynamics**: Computing the changes in roll, pitch, and yaw angles to determine how a drone or rocket has tilted away from its vertical tracking axis.
+
+• **Camera Tracking Systems**: Taking a live video stream and mathematically calculating where a camera is physically located relative to the object it is recording
+
 ### File Directory
 
 ```text
@@ -30,7 +40,7 @@ RodriguesFormula/
 └─ README.md
 ```
 
-### Latex Forms
+### LaTeX Forms
 
 If $v$ is a valid vector in $ℝ^3$, with $k$ being a unit vector such as $\hat{\imath}$, $\hat{\jmath}$, or $\hat{k}$, we can represent the formula as follows:
 
@@ -44,13 +54,3 @@ $$\Large R = I + \sin(\theta)\big[\mathbf{k}\big]_\times + (1 - \cos(\theta))\bi
 
 $$\Large [\mathbf{k}\big]_\times = \begin{pmatrix} 0 & -k_z & k_y \\ k_z & 0 & -k_x \\ -k_y & k_x & 0 \end{pmatrix}$$
 ________
-
-### Applications
-
-• Computer Graphics: Rotating 3D models and positioning virtual cameras.
-
-• Robotics: Calculating robot arm joint movements and kinematics.
-
-• Aerospace: Tracking aircraft and spacecraft orientation (pitch, roll, yaw).
-
-• Computer Vision: Estimating 3D camera poses and tracking object motion.
